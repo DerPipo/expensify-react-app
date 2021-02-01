@@ -12,6 +12,12 @@ import 'react-dates/lib/css/_datepicker.css'
 
 const store = configureStore();
 
+console.log('in app.js:15')
+
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
+
 const jsx = (
     <Provider store={store}>
         <AppRouter />
