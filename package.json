@@ -2,6 +2,9 @@
   "name": "expansify-app",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "15.x"
+  },
   "license": "MIT",
   "scripts": {
     "serve": "live-server dist",
