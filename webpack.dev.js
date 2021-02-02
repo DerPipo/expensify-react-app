@@ -7,7 +7,8 @@ module.exports = merge(common, {
     // devtool: 'eval-cheap-module-source-map', // doesn't work with css source maps...
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist',
+        contentBase: './public',
         historyApiFallback: true,
+        publicPath: '/dist/',
     }
 })
