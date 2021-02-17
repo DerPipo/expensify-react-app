@@ -1,7 +1,20 @@
 // Colors
+$dark-grey: #333;
+$grey: #666;
+$light-grey: #f7f7f7;
+$light-blue: rgb(46, 172, 255);
+$dark-blue: #364051;
+
+$button-color: white;
+$button-background-color: $light-blue;
+$text-color: $dark-grey;
+
+// Font Size
+$font-size-small: 1.4rem;
+$font-size-large: 1.8rem;
 
 // Spacing
-$s-size: 0.8rem;
+$s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;

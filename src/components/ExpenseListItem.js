@@ -6,19 +6,13 @@ import formatCurrency from '../utils/currency-format'
 import formatDate from '../utils/date-format'
 
 export const ExpenseListItem = (props) => (
-    <div>
-        <Link to={`/edit/${props.expense.id}`}>
-            <h3>{props.expense.description}</h3>
+        <Link className="list-item" to={`/edit/${props.expense.id}`}>
+            <div>
+                <h3 className="list-item__title">{props.expense.description}</h3>
+                <p className="list-item__subtitle">{formatDate(props.expense.createdAt)}</p>
+            </div>
+            <h3 className="list-item__data">{formatCurrency(props.expense.amount)}</h3>
         </Link>
-        <p>
-            {formatCurrency(props.expense.amount)}
-            - 
-            {formatDate(props.expense.createdAt)}
-        </p>
-        <button onClick={() => {
-            props.startRemoveExpense(props.expense.id)
-        }}>Remove</button>
-    </div>
 )
 
 const mapDispatchToProps = (dispatch) => ({
