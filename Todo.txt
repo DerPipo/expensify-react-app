@@ -1,0 +1,9 @@
+To do
+=====
+- Other Login 
+- I18N
+
+Done
+====
+- Show number of hidden expenses in /dashboard summary
+- Modal on remove

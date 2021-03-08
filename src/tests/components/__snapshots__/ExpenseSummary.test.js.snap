@@ -16,11 +16,19 @@ exports[`should render 0 expenses correctly 1`] = `
       </span>
        expense
       s
-       totalling 
+       totalling
+       
       <span>
         $0.00
       </span>
     </h1>
+    <h3
+      className="page-header__subtitle"
+    >
+       
+      are
+       hidden by your filters.
+    </h3>
     <div
       className="page-header__actions"
     >
@@ -50,7 +58,8 @@ exports[`should render 1 expense correctly 1`] = `
         1
       </span>
        expense
-       totalling 
+       totalling
+       
       <span>
         $12.34
       </span>
@@ -85,7 +94,8 @@ exports[`should render 2 expenses correctly 1`] = `
       </span>
        expense
       s
-       totalling 
+       totalling
+       
       <span>
         $1,000.50
       </span>
